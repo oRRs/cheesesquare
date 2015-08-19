@@ -47,6 +47,18 @@
                 android:fitsSystemWindows="true"
                 app:layout_collapseMode="parallax" />
 
+            <Chronometer
+                android:id="@+id/chronometer_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:ellipsize="none"
+                android:format="Test"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textIsSelectable="false" />
+
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"

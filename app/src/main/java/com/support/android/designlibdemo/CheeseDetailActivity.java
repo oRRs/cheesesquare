@@ -23,6 +23,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Chronometer;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -48,6 +49,9 @@ public class CheeseDetailActivity extends AppCompatActivity {
         CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle(cheeseName);
+
+        Chronometer chronometer = (Chronometer) findViewById(R.id.chronometer_test);
+        chronometer.start();
 
         loadBackdrop();
     }
